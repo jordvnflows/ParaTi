@@ -87,3 +87,57 @@ body {
     box-shadow: 0 1em 1em -0.75em darkgrey;
     background-color: blueviolet;
 }
+/* ADDING THE MOBILE RESPONSIVENESS*/
+
+@media screen and (min-width: 44rem) {
+    body {
+        background-image: url("https://images.unsplash.com/photo-1612015888543-a4057b56ac17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-section {
+/* got rid of overflow-y & float*/
+        padding: 2em;
+        background-color: whitesmoke;
+        width: 50vw;
+        height: 90vh;
+        box-shadow: 0 2em 1em 0.5em darkgray;
+    }
+    
+    
+    .scroll-area {
+        position: relative;
+    }
+    
+    .q1-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        height: 16em;
+        text-align: center;
+    }
+    
+    .q1-card img {
+        height: 7em;
+        width: auto;
+    }
+    
+    .q2-card {
+        padding: 1em;
+        height: auto;
+        box-shadow: 0 1em 1em -0.75em darkgrey;
+    }
+    
+    .poema {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .poema img {
+        height: 5em;
+    }
+}
