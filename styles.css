@@ -1,9 +1,10 @@
+
 * { 
     font-family: 'Taub Sans Regular';
 }
 
 body {
-    background-image: url("https://images.unsplash.com/photo-1612015888543-a4057b56ac17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: url(https://images.unsplash.com/photo-1563730031910-60f14687e33a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-size: cover;
 }
 
@@ -50,7 +51,15 @@ body {
     width: auto;
 }
 
+.q1-card button {
+    background-color: whitesmoke;
+    border-style: none;
+}
+
 .q2-card {
+    background-image: url(https://www.pngall.com/wp-content/uploads/13/Peony-Pink.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
     padding: 1em;
     height: auto;
   /*  box-shadow: 0 1em 1em -0.75em darkgrey;*/
@@ -67,9 +76,21 @@ body {
 /*
 .q3-card {
     padding: 1em;
-    height: 16em;
+    height: 5em;
     box-shadow: 0 1em 1em -0.75em darkgrey;
-    background-color: blueviolet;
+}
+
+.visualizer {
+    background-color: aqua;
+    width: 100%;
+}
+
+.visualizer img {
+    height: 5em;
+}
+
+.visualizer button {
+    width: 100%;
 }
 
 .q4-card {
@@ -131,6 +152,12 @@ body {
     .poema {
         justify-self: center;
         text-align: center;
+    }
+
+    .q3-card {
+        padding: 1em;
+        height: 8em;
+        box-shadow: 0 1em 1em -0.75em lightgray;
     }
 
 }
