@@ -1,3 +1,4 @@
+
 * { 
     font-family: 'Taub Sans Regular';
 }
@@ -5,13 +6,6 @@
 body {
     background-image: url("https://images.unsplash.com/photo-1612015888543-a4057b56ac17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-size: cover;
-}
-
-@media screen and (max-width: 44rem) {
-    body {
-        background-image: url("https://images.unsplash.com/photo-1612015888543-a4057b56ac17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-        background-size: cover;
-    }
 }
 
 ::-webkit-scrollbar {
@@ -40,16 +34,6 @@ body {
     box-shadow: 0 2em 1em 0.5em darkgray;
 }
 
-@media screen and (max-width: 44rem) {
-    .home-section {
-        padding: 2em;
-        background-color: whitesmoke;
-        width: 50vw;
-        height: 100vh;
-        box-shadow: 0 2em 1em 0.5em darkgray;
-    }
-}
-
 .scroll-area {
     position: relative;
 }
@@ -62,27 +46,9 @@ body {
     height: 16em;
 }
 
-@media screen and (max-width: 44rem) {
-    .q1-card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1em;
-        height: 5em;
-    }
-}
-
 .q1-card img {
     height: 7em;
     width: auto;
-}
-
-@media screen and (max-width: 44rem) {
-    .q1-card img {
-        margin-top: 10em;
-        height: 4em;
-        width: auto;
-    }
 }
 
 .q2-card {
@@ -91,25 +57,9 @@ body {
     box-shadow: 0 1em 1em -0.75em darkgrey;
 }
 
-@media screen and (max-width: 44rem) {
-    .q2-card {
-        margin-top: 5em;
-        padding: 1em;
-        height: auto;
-        box-shadow: 0 1em 1em -0.75em darkgrey;
-    }
-}
-
 .poema {
     justify-content: center;
     text-align: center;
-}
-
-@media screen and (max-width: 44rem) {
-    .poema {
-        justify-self: center;
-        text-align: center;
-    }
 }
 
 .poema img {
@@ -136,3 +86,50 @@ body {
     box-shadow: 0 1em 1em -0.75em darkgrey;
     background-color: blueviolet;
 } */
+
+@media screen and (max-width: 760px) {
+    body {
+        background-image: url("https://media1.giphy.com/media/CWlXUL6NqRpixZjJg3/200w.gif?cid=6c09b952nh77r9k5al7f9iwe1f2inl7siblps24qvui2m2fk&rid=200w.gif&ct=g");
+        background-size: cover;
+    }
+
+    .home-section {
+        overflow-y: hidden;
+        position: absolute;
+        margin: auto;
+        top: 11em;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 2em;
+        background-color: whitesmoke;
+        width: 50vw;
+        height: 60vh;
+        box-shadow: 0 0.5em 1em 0.2em darkgray;
+    }
+
+    .q1-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        height: 5em;
+    }
+
+    .q1-card img {
+        height: 4em;
+        width: auto;
+    }
+
+    .q2-card {
+        padding: 1em;
+        height: auto;
+        box-shadow: 0 1em 1em -0.75em darkgrey;
+    }
+
+    .poema {
+        justify-self: center;
+        text-align: center;
+    }
+
+}
