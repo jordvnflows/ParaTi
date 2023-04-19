@@ -104,7 +104,7 @@ body {
         background-color: whitesmoke;
         width: 50vw;
         height: 70vh;
-        box-shadow: 0 0.5em 1em 0.2em darkgray;
+        box-shadow: 0 0.5em 1em 0.2em whitesmoke;
     }
 
     .q1-card {
