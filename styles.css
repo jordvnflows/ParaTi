@@ -29,6 +29,7 @@ body {
     padding: 2em;
     float: right;
     background-color: whitesmoke;
+    border-radius: 0.5em;
     width: 25vw;
     height: 92vh;
     box-shadow: 0 2em 1em 0.5em darkgray;
@@ -47,7 +48,7 @@ body {
 }
 
 .q1-card img {
-    height: 7em;
+    height: 5em;
     width: auto;
 }
 
@@ -89,39 +90,8 @@ body {
 .poema img {
     height: 5em;
 }
-/*
-.q3-card {
-    padding: 1em;
-    height: 5em;
-    box-shadow: 0 1em 1em -0.75em darkgrey;
-}
 
-.visualizer {
-    background-color: aqua;
-    width: 100%;
-}
-
-.visualizer img {
-    height: 5em;
-}
-
-.visualizer button {
-    width: 100%;
-}
-
-.q4-card {
-    padding: 1em;
-    box-shadow: 0 1em 1em -0.75em darkgrey;
-    height: 16em;
-    background-color: blueviolet;
-}
-
-.q5-card {
-    padding: 1em;
-    height: 16em;
-    box-shadow: 0 1em 1em -0.75em darkgrey;
-    background-color: blueviolet;
-} */
+/*THIS FOLLOWING SECTION IS FOR MEDIA QUERY 760PX */
 
 @media screen and (max-width: 760px) {
     body {
@@ -139,9 +109,10 @@ body {
         bottom: 0;
         padding: 2em;
         background-color: whitesmoke;
+        border-radius: 0.5em;
         width: 50vw;
-        height: 70vh;
-        box-shadow: 0 0.5em 1em 0.2em whitesmoke;
+        height: 60vh;
+        box-shadow: 0 0 0.5em 0.2em whitesmoke;
     }
 
     .q1-card {
@@ -153,7 +124,7 @@ body {
     }
 
     .q1-card img {
-        height: 4em;
+        height: 3em;
         width: auto;
     }
 
@@ -168,6 +139,13 @@ body {
     .poema {
         justify-self: center;
         text-align: center;
+    }
+
+    .poema img {
+        position: absolute;
+        left: 14em;
+        bottom: 3em;
+        float: right;
     }
 
     .q3-card {
