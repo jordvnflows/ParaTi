@@ -19,7 +19,7 @@ body {
 
 
 	> div {
-		background-image: url('/reina/src/main/resources/static/humbeSeratoninaBG.gif');
+		background-image: url('/humbeSeratoninaBG.gif');
 		background-size: cover;
 		position: absolute;
 		left: 0;
