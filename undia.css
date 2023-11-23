@@ -1,0 +1,222 @@
+:root {
+	--pColor: #F6E8EA;
+	--sColor: #F45B69;
+	--accentColor: #5A0001;
+	--accentColor2: #F13030;
+	--textColor: #22181C;
+}
+
+* {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.99em;
+
+}
+
+body {
+	background-blend-mode: overlay;
+	background-size: cover;
+	overflow: hidden;
+
+
+	> div {
+		background-image: url('/reina/src/main/resources/static/humbeSeratoninaBG.gif');
+		background-size: cover;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 114vh;
+		width: 100vw;
+		filter: opacity(0.2);
+	}
+}
+
+button {
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+section {
+
+	> button {
+
+		&:hover {
+			outline: 0.1em solid var(--accentColor);
+		}
+
+		&:active {
+			background-color: var(--accentColor);
+			color: var(--pColor);
+		}
+	}
+}
+
+video {
+	height: auto;
+	width: auto;
+	display: none;
+}
+
+/* Standardized classes for quick styling */
+.centralize-contents-flex {
+	display: flex;
+	column-gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
+
+.mainImage-container {
+	height: 55rem;
+
+	> img {
+		height: inherit;
+	}
+}
+
+#flower1 {
+	top: 0;
+	animation: fallElem 3.6s linear infinite;
+	animation-delay: 0.4s;
+}
+#flower2 {
+	top: 0;
+	animation: fallElem 3.4s linear infinite;
+	animation-delay: 0.7s;
+}
+#flower3 {
+	top: 0;
+	animation: fallElem 3.2s linear infinite;
+	animation-delay: 0.2s;
+}
+#flower4 {
+	top: 0;
+	animation: fallElem 3.7s linear infinite;
+	animation-delay: 0.9s;
+}
+#flower5 {
+	top: 0;
+	animation: fallElem 3.3s linear infinite;
+	animation-delay: 0.5s;
+}
+
+@keyframes fallElem {
+	0% {
+		top: 0%;
+		transform: translateY(0em)
+			rotate(0deg);
+	}
+	33% {
+		top: 33%;
+		transform: translateY(25vh)
+			rotate(33deg);
+	}
+	66% {
+		top: 66%;
+		transform: translateY(50vh)
+			rotate(66deg);
+	}
+	100% {
+		top: 100%;
+		transform: translateY(75vh)
+			rotate(99deg);
+	}
+}
+.flower-containerSmall {
+	position: absolute;
+	background: #F6E8EA;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	> img {
+		height: 4rem;
+	}
+}
+
+.flower-Container {
+	position: absolute;
+	background: #5A0001;
+	height: 100vh;
+	width: 102vw;
+	top: 0;
+	left: 0;
+
+	#flower1 {
+		&:hover {
+			animation-play-state:paused;
+		}
+	}
+	#flower2 {
+		&:hover {
+			animation-play-state:paused;
+		}
+	}
+	#flower3 {
+		&:hover {
+			animation-play-state:paused;
+		}
+	}
+	#flower4 {
+		&:hover {
+			animation-play-state:paused;
+		}
+	}
+	#flower5 {
+		&:hover {
+			animation-play-state:paused;
+		}
+	}
+
+	> button {
+		border: none;
+		background: none;
+
+		> img {
+			height: 8em;
+		};
+	}
+}
+
+/* Article Styling */
+#historia-contentContainer {
+	top: 1.5em;
+	width: 40em;
+	background: none;
+	backdrop-filter: blur(1em);
+	border: none;
+	border-radius: 0.5em;
+
+	&:hover {
+		outline: 0.1em solid var(--accentColor);
+	}
+}
+
+#laBelleza {
+	border-radius: 0.5em;
+	padding: 0.5em 2em 1.5em 2em;
+	backdrop-filter: blur(2em);
+
+}
+
+#nH-historiaExit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	background: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+}
+
+#imageHolder {
+	column-gap: 0.5em;
+	
+	> img {
+		height: 25rem;
+	}
+}
